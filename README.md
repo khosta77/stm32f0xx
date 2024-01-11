@@ -62,7 +62,7 @@ v1.7.0
 # Залитие на stm32f407vg discovery
 
 ```
-$ sudo openocd -f interface/stlink.cfg -f target/stm32f0x.cfg -c \
+$ make all; sudo openocd -f interface/stlink.cfg -f target/stm32f0x.cfg -c \
 "init; reset halt; flash write_image erase main.hex; "\  
 "reset; exit"
 ```
